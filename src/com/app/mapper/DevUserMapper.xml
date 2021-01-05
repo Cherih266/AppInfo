@@ -4,7 +4,7 @@
 <mapper namespace="com.app.mapper.DevUserMapper">
     <!--DevUser dologin(@Param("devCode") String devCode,
      @Param("devPassword") String devPassword);-->
-    <select id="dologin" resultType="DevUser">
+    <select id="dologin" resultType="com.app.pojo.DevUser">
         select  * from dev_user
             where devCode = #{devCode}
                 and devPassword = #{devPassword}
